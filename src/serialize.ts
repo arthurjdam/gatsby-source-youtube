@@ -18,6 +18,7 @@ exports.createGatsbyIds = (items, createNodeId) => {
 };
 
 exports.normalizeRecords = items => {
+  console.log(items);
   return (items || []).map(item => {
     const e = {
       id: get(item, "id"),
